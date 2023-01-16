@@ -8,7 +8,7 @@ app = Flask(__name__)
 # set path for environment variables file
 load_dotenv(dotenv_path='.env')
 
-# config your host & port for app using environment variables
+# config your host & port for app using environment variable
 HOST = os.environ['HOST']
 PORT = os.environ['BACKEND_PORT']
 
