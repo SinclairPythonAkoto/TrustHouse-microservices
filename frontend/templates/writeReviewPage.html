@@ -22,7 +22,7 @@
     <h1>Write A Review</h1>
     <!-- Create a review form -->
     <div class="bg-img">
-        <form action="{{ url_for('new_review') }}" class="container" method="post" enctype="multipart/form-data">
+        <form action="http://localhost:50102/new-review" class="container" method="post" enctype="multipart/form-data">
          <h1 class="disableBlur">Address</h1>
 	    <label for="propertyNumber"><b>Door / Property Number</b></label>
 	    <input type="text" placeholder="Enter Door/Property Number" name="propertyNumber" style="width:89%" required/><br>
