@@ -61,10 +61,17 @@ def find_by_street():
 
 
 # display reviews by location
-# @app.route('/review')
+@app.route('/review/location', methods=['POST'])
+def find_by_location():
+    location = request.form['searchLocation']
+    return f'Find all reviews with the same location as: {location}'
 
 
 # display reviews by postcode
+@app.route('/review/postcode', methods=['POST'])
+def find_by_postcode():
+    postcode = request.form['searchPostcode']
+    return f'Find all reviews with the same review as: {postcode}'
 
 
 
