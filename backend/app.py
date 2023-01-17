@@ -46,7 +46,11 @@ def find_by_rating():
     return f'Find all reviews with a rating of {rating}'
 
 
-# 
+# display reviews by door number
+@app.route('/review/door', methods=['POST'])
+def find_by_door():
+    door = request.form['searchDoorNum']
+    return f'Find all reviews with door number: {door}'
 
 
 
