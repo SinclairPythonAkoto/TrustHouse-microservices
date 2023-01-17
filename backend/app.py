@@ -23,7 +23,7 @@ def home():
 
 @app.route('/new-review', methods=['POST'])
 def new_review():
-    return 'hello world'
+    return 'Create a new review'
 
 if __name__ == '__main__':
     app.run(debug=True, host=HOST, port=PORT)

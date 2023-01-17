@@ -39,6 +39,16 @@ def new_review():
     return render_template('writeReviewPage.html')
 
 
+# view reviews
+@app.route('/reviews')
+def find_review():
+    return render_template('searchReviewPage.html')
+
+
+# new_address address/new
+@app.route('/address/new')
+def new_address():
+    return render_template('newAddress.html')
 
 if __name__ == '__main__':
     app.run(debug=True, host=HOST, port=PORT)
