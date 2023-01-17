@@ -53,6 +53,20 @@ def find_by_door():
     return f'Find all reviews with door number: {door}'
 
 
+# display reviews by street name
+@app.route('/review/street', methods=['POST'])
+def find_by_street():
+    street = request.form['searchStreetName']
+    return f'Find all reviews with the same location as: {street}'
+
+
+# display reviews by location
+# @app.route('/review')
+
+
+# display reviews by postcode
+
+
 
 if __name__ == '__main__':
     app.run(debug=True, host=HOST, port=PORT)
