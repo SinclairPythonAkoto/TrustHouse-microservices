@@ -67,14 +67,20 @@
       <h3 class="w3-padding-64"><b>Trust<br>House</b></h3>
     </div>
     <div class="w3-bar-block">
-      <a href="{{ url_for('home') }}" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-      <a href="/home#description" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Us</a> 
-      <a href="/home#factors" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Factors</a> 
-      <a href="{{ url_for('trusthouse_api_info') }}" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Trust House API</a> 
-      <a href="{{ url_for('new_review') }}" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">New Review</a> 
-      <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">View Reviews</a>
-      <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" target="_blank">Map</a>
-      <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Upload Address</a>
+      <a href="#allAddresses" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">All Addresses</a> 
+      <a href="#allReviews" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">All Reviews</a> 
+      <a href="#allTenants" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">All Tenants</a> 
+      <a href="#allNeighbours" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">All Neighbours</a> 
+      <a href="#allVisitors" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">All Visitors</a> 
+      <a href="#filterRating" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Filter Rating</a>
+      <a href="#filterDoor" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Filter Door</a>
+      <a href="#filterStreet" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Filter Street</a>
+      <a href="#filterLocation" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Filter Location</a>
+      <a href="#filterPostcode" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Filter Postcode</a>
+      <a href="#newAddress" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Upload Address</a>
+      <a href="#newBusiness" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Upload Business</a>
+      <a href="#newIncident" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Upload Incident</a>
+      <a href="{{ url_for('home') }}" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
     </div>
     </nav>
   
